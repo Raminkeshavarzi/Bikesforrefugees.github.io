@@ -5,16 +5,49 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
+*{
+    box-sizing: border-box;
+}
  html,
  body {
      font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+     box-sizing: border-box;
  }
  
  button {
      font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
  }
- 
+
+ a{
+    color: #0275d8;
+    text-decoration: none;
+    font-size: 0.89rem;
+ }
+
+p{
+    float: none;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+}
+.my-4{
+    opacity: 1;
+}
+.sidePhoto{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin: 0 1rem;
+}
+ .jumbotron h1{
+    font-size: 4.3rem;
+    color: white;
+ }
+ .jumbotron p{
+     font-size: 1.2rem;
+     color: white;
+ }
  /*  Navigation */
  .navbar-brand > img {
      max-height: 40px;
@@ -30,13 +63,43 @@
      color: #292b2c;
      font-weight: 600;
      text-transform: uppercase;
+     padding-left: 1rem;
+     padding-right: 1rem;
  
      /*  Challenge: can you make the navigation links orange on hover? */
  }
+
+.nav-link:hover{
+    
+    background-color: #ce5f31;
+    border-radius: 3px;
+}
  
+img .sidebar{
+    width: 30%;
+    height: auto;
+}
  /* Buttons */
  /* INSERT BUTTON STYLES HERE */
- 
+ button{
+     height: 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(206, 95, 49);
+    color: white;
+ }
+ .mainButton{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(206, 95, 49);
+    color: white;
+    padding: 0.45rem;
+
+ }
+ #white{
+     color: black;
+     background-color: white;
+ }
  
  /* Alert */
  .alert {
@@ -67,6 +130,11 @@
  .jumbotron {
      border-radius: 0;
  }
+
+ #backgroundPhoto{
+    background-image: url(/week-1/bike/Bikesforrefugees.github.io/images/header-bike.jpg);
+    opacity: 0.9;     
+ }
  
  /* Headings */
  .heading-underline {
@@ -91,6 +159,25 @@
  }
  
  /* Article */
+section {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    word-spacing: 1.5px;
+    border: 1px none;
+    background-color: lightgray;
+    padding: 0.90rem;
+}
+.boxSection{
+    display: flex;
+
+
+}
+.white{
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-left: 20px;
+}
  .article {
      margin-bottom: 2em;
  }
@@ -119,6 +206,7 @@
  .article__read-more:last-child {
      margin-bottom: 0;
  }
+ 
  
  /* Footer */
  .footer {
