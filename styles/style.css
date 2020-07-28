@@ -5,7 +5,7 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
- *{
+*{
     box-sizing: border-box;
 }
  html,
@@ -82,7 +82,7 @@ img .sidebar{
  /* Buttons */
  /* INSERT BUTTON STYLES HERE */
  button{
-     height: 2.5rem;
+    height: 2.5rem;
     border: 1px solid transparent;
     border-radius: 3px;
     background-color: rgb(206, 95, 49);
@@ -132,9 +132,17 @@ img .sidebar{
  }
 
  #backgroundPhoto{
-    background-image: url(/week-1/bike/Bikesforrefugees.github.io/images/header-bike.jpg);
-    opacity: 0.9;     
+    background-image: url(/Bikesforrefugees.github.io/images/header-bike.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
  }
+
+ a.facebook-link {
+    position: relative;
+    top: 30px;
+}
  
  /* Headings */
  .heading-underline {
@@ -169,14 +177,13 @@ section {
     padding: 0.90rem;
 }
 .boxSection{
-    display: flex;
-
-
+    /* display: flex; */
 }
+
 .white{
     background-color: white;
     border: 1px solid lightgray;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
  .article {
      margin-bottom: 2em;
@@ -220,10 +227,61 @@ section {
  }
  
  /* Media queries */
+ @media screen and (max-width: 340px) {
  
- @media screen and (min-width: 992px) {
+    .jumbotron h1{
+        font-size: 33px;
+     }
+
+     .jumbotron p{
+        font-size: 18px;
+     }
+    .article{
+        margin-bottom: 2em;
+        width: 100%;
+    }
+     section {
+        display: flex;
+        flex-flow: column;
+        word-spacing: 1.5px;
+        background-color: lightgray;
+        padding: 0.90rem;
+     }
+     .white {
+        background-color: white;
+        border: 1px solid lightgray;
+    }
+
+ }
+
+ @media screen and (min-width: 350px) {
  
      .navbar-brand > img {
         max-height: 80px;
      }
+
+     .boxSection{
+         display: flex;
+     }
+
+     .white{
+        background-color: white;
+        border: 1px solid lightgray;
+        margin-left: 20px;
+    }
+
+    a.facebook-link {
+        position: relative;
+        top: 30px;
+        float: left;
+    }
+
+    .article {
+        margin-bottom: 2em;
+        float: left;
+    }
  }
+
+
+
+ 
